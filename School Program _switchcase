@@ -1,0 +1,37 @@
+#include<stdio.h>
+/**
+  *main - grading system
+  *Description: for 844 education system
+  * 80 - 100 = a
+  * 70 - 79 = A-
+  * 65 - 69 = B+
+  * 60 - 64 = B
+  * 55 - 59 = B-
+  * 50 - 54 = C+
+  * 45 - 49 = C-
+  * 40 - 44 = D
+  * 45 - 39 = E
+  * 40 and Below = F
+  *Return: (0)
+*/
+
+int main()
+{
+  int Scores;
+  printf("Enter your Scores \n");
+  scanf("%d", &Scores);
+
+  switch(Scores) /* Range in C 80 ...100*/
+  {
+    case 80 ...100:
+    printf("A");
+      break;
+    case 70 ...79:
+    printf("B");
+      break;
+    default:
+      printf("You are not qualified");
+  }
+  return(0);
+  
+}
